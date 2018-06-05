@@ -2,7 +2,7 @@ var katzDeli = []
 var counter = 0;
 
 function takeANumber(katzDeliLine){
-  katzDeliLine[counter] = counter++;
+  katzDeliLine.push(counter++);
   return `You are number ${counter}.`
 }
 
