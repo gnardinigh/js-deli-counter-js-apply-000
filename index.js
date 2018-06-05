@@ -1,8 +1,9 @@
 var katzDeli = []
 
 function takeANumber(katzDeliLine){
+  var counter = 0
   if(katzDeliLine.length===0){
-    katzDeliLine[0] = 0
+    katzDeliLine[0] = 1
     return `Welcome, you are number 1`
   }
   else{
@@ -18,7 +19,7 @@ function nowServing(katzDeliLine){
   }
   else{
     var nextUp = katzDeliLine.shift();
-    return `Currently serving ${nextUp}.`;
+    return `Currently serving number ${nextUp}.`;
   }
 }
 
