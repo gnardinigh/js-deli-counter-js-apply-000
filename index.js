@@ -5,7 +5,8 @@ function takeANumber(katzDeliLine){
     return `Welcome, you are number 1`
   }
   else{
-  var lineSpot = katzDeliLine.length
+  var lineSpot = katzDeliLine.length;
+  katzDeliLine[katzDeliLin]
   return `Welcome, you are number ${lineSpot}`;
   }
 }
