@@ -2,12 +2,12 @@ var katzDeli = []
 
 function takeANumber(katzDeliLine){
   if(katzDeliLine.length===0){
-    katzDeliLine[0] = `Spot`
+    katzDeliLine[0] = 0
     return `Welcome, you are number 1`
   }
   else{
   var lineSpot = katzDeliLine.length+1;
-  katzDeliLine[katzDeliLine.length] = `Spot`;
+  katzDeliLine[katzDeliLine.length] = katzDeliLine.length+1;
   return `Welcome, you are number ${lineSpot}`;
   }
 }
