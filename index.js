@@ -2,6 +2,7 @@ var katzDeli = []
 
 function takeANumber(katzDeliLine){
   if(katzDeliLine.length===0){
+    katzDeliLine[0] = `Spot`
     return `Welcome, you are number 1`
   }
   else{
