@@ -1,6 +1,6 @@
 var katzDeli = []
 
-function takeANumber(katzDeliLine, name){
+function takeANumber(katzDeliLine){
   katzDeliLine.push(name);
   return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
 }
@@ -10,8 +10,7 @@ function nowServing(katzDeliLine){
     return `There is nobody waiting to be served!`
   }
   else{
-    var nextUp = katzDeliLine[0];
-    katzDeliLine.shift();
+    var nextUp = katzDeliLine.shift();
     return `Currently serving ${nextUp}.`;
   }
 }
