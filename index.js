@@ -2,16 +2,9 @@ var katzDeli = []
 var counter = 0;
 
 function takeANumber(katzDeliLine){
-  
-  if(katzDeliLine.length===0){
-    katzDeliLine[0] = 1
-    return `Welcome, you are number 1`
-  }
-  else{
-  var lineSpot = katzDeliLine.length+1;
-  katzDeliLine[katzDeliLine.length] = katzDeliLine.length+1;
-  return `Welcome, you are number ${lineSpot}`;
-  }
+  katzDeliLine[counter] = counter +1;
+  counter++
+  return `You are number ${counter}.`
 }
 
 function nowServing(katzDeliLine){
