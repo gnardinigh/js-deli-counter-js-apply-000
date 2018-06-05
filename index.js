@@ -1,7 +1,8 @@
 var katzDeli = []
+var counter = 0;
 
 function takeANumber(katzDeliLine){
-  var counter = 0;
+  
   if(katzDeliLine.length===0){
     katzDeliLine[0] = 1
     return `Welcome, you are number 1`
