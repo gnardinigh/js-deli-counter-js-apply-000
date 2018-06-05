@@ -1,8 +1,13 @@
 var katzDeli = []
 
 function takeANumber(katzDeliLine){
-  katzDeliLine.push(name);
-  return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
+  if(katzDeliLine.length===0){
+    return `Welcome, you are number 1`
+  }
+  else{
+  var lineSpot = katzDeliLine.length
+  return `Welcome, you are number ${lineSpot}`;
+  }
 }
 
 function nowServing(katzDeliLine){
